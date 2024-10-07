@@ -1,8 +1,6 @@
 import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
 
-//TODO
-// enhance code
-//fixa så att det blir 108 000 kr istf 108000 kr
+
 
 
 

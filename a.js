@@ -31,7 +31,7 @@ for(var i = 0; i < 10;i++){
     cars.push(new Car(n,t,c,f,y,i2,i3))
 }
 
-function r(){
+const createCarDivs = function(){
     var c = document.getElementsByClassName('productgallery')[0]
     var x = `<div class="productcard">
     <img src="${cars[0].img}">
@@ -136,7 +136,7 @@ function r(){
 }
 
 console.log(cars)
-r()
+createCarDivs()
 
 
 

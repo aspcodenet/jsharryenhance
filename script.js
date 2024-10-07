@@ -1,33 +1,15 @@
-import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
+
+// Importera class Car
+import { Car, calculateCarPrice, theAge }  from './data/cars.js' // PATH
+import * as vehicleCreator from './utils/vehicleCreator.js' // PATH
+
+
+let cars = vehicleCreator.getCars()
 
 
 
+console.log( calculateCarPrice(cars[0]) ) 
 
-
-class Car{
-    constructor(n,t,c,f,y,i,i2){
-        this.name = n
-        this.type = t
-        this.color = c
-        this.fuel = f
-        this.year = y
-        this.img = "https://axmjqhyyjpat.objectstorage.eu-amsterdam-1.oci.customer-oci.com/n/axmjqhyyjpat/b/randomimages/o/cars%2F" + i +  ".png"
-        this.price = i2
-    }
-}
-
-var cars = []
-//Generate 20 cars 
-for(var i = 0; i < 10;i++){
-    var n = faker.vehicle.vehicle()
-    var t = faker.vehicle.type()
-    var c = faker.vehicle.color()
-    var f = faker.vehicle.fuel()
-    var y = faker.number.int({min:1970, max:2023})
-    var i2 = faker.number.int({min:1, max:100})
-    var i3 = faker.number.int({min:30, max:200}) * 1000
-    cars.push(new Car(n,t,c,f,y,i2,i3))
-}
 
 const createCarDivs = function(){
     var c = document.getElementsByClassName('productgallery')[0]
@@ -135,6 +117,96 @@ const createCarDivs = function(){
 
 console.log(cars)
 createCarDivs()
+
+
+
+
+
+// class Rectangle {
+//     constructor(height, width) {
+//       this.height = height;
+//       this.width = width;
+//     }
+//     // Getter
+//     get area() {
+//       return this.calcArea();
+//     }
+//     // Method
+//     calcArea() {
+//       return this.height * this.width;
+//     }
+//   }
+// //Constructor function
+// function User(namn) {
+//     this.name = namn;
+// }
+
+// let user3 = new User('Bob')
+// let user2 = new User('John');
+
+
+
+
+
+
+// // TYPESCRIPT - Javascript med TYPER
+//   const square2 = new Rectangle("aaaa", 12)
+  
+//   const square = new Rectangle(10, 10);
+
+  
+
+
+
+  
+//   console.log(square.area); // 100
+  
+
+
+// // var number
+// let number = 12
+// const age = 52
+
+
+// // C# lambdas
+// // new { a: "Hej", b: "dasdasdas"};
+// // anonyma objekt
+
+// let user = {
+//     name: "Stefan",
+//     age:52
+// };
+
+// console.log(user.name);
+// user.newAge = 11;
+
+// console.log(user)
+
+
+
+
+
+
+
+// // for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
+// //     alert(i);
+// //   }
+  
+
+
+// age = 12
+// // == värdejämförelse "10" = 10
+// // === värde och datatyps-jämförelse "10" != 10
+// if( age == 12){
+
+// }
+// console.log(number) // undefined
+// number = 10
+
+// console.log(number)
+// // 10
+
+// //var age = 12
 
 
 

@@ -7,7 +7,7 @@ import * as vehicleCreator from './utils/vehicleCreator.js' // PATH
 let cars = vehicleCreator.getCars()
 
 
-
+// hgej he   
 console.log( calculateCarPrice(cars[0]) ) 
 
 
